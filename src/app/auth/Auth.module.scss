@@ -1,0 +1,26 @@
+.wrapper {
+    @apply flex flex-row h-screen w-screen justify-center items-center;
+    background-image: url("../../../public/assets/images/background.jpg");
+    background-size: cover; /* изображение заполняет весь блок */
+    background-position: center; /* центрируем изображение */
+    background-repeat: no-repeat; /* не повторяем изображение */
+    height: 100vh; /* высота блока на весь экран */
+    width: 100%; /* ширина блока на всю ширину */
+
+
+    //>.logo  {
+    //
+    //}
+    > .card {
+        @apply flex flex-col gap-2 bg-white items-center ;
+        width: 470px;
+        height: 526px;
+        border-radius: 30px;
+        margin-bottom: 155px;
+
+        > .content {
+            @apply flex flex-col gap-2
+        }
+
+        }
+}
