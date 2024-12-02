@@ -24,43 +24,43 @@ export function AuthFields({
 						   }: AuthFieldsProps) {
 	return (
 		<>
-			{isReg && (
-				<FormField
-					control={form.control}
-					name='username'
-					rules={{
-						required: 'Имя обязательно'
-					}}
-					render={({ field }) => (
-						<FormItem>
-							<FormControl>
-								<Input
-									placeholder='Иван'
-									disabled={isPending}
-									{...field}
-								/>
-							</FormControl>
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
-			)}
+			{/* {isReg && (*/}
+			{/*	<FormField*/}
+			{/*		control={form.control}*/}
+			{/*		name='username'*/}
+			{/*		rules={{*/}
+			{/*			required: 'Имя обязательно'*/}
+			{/*		}}*/}
+			{/*		render={({ field }) => (*/}
+			{/*			<FormItem>*/}
+			{/*				<FormControl>*/}
+			{/*					<Input*/}
+			{/*						placeholder='Иван'*/}
+			{/*						disabled={isPending}*/}
+			{/*						{...field}*/}
+			{/*					/>*/}
+			{/*				</FormControl>*/}
+			{/*				<FormMessage />*/}
+			{/*			</FormItem>*/}
+			{/*		)}*/}
+			{/*	/>*/}
+			{/*)} */}
 			<FormField
 				control={form.control}
-				name='email'
+				name='phoneNumber'
 				rules={{
-					required: 'Почта обязательна',
-					pattern: {
-						value: validEmail,
-						message: 'Такой почты не существует.'
-					}
+					required: 'Телефон обязательна',
+					// pattern: {
+					// 	value: validPhone,
+					// 	message: 'Такой почты не существует.'
+					// }
 				}}
 				render={({ field }) => (
 					<FormItem>
 						<FormControl>
 							<Input
-								placeholder='ivan@examle.com'
-								type='email'
+								placeholder='+79169530222'
+								type='phoneNumber'
 								disabled={isPending}
 								{...field}
 							/>
@@ -71,7 +71,7 @@ export function AuthFields({
 			/>
 			<FormField
 				control={form.control}
-				name='passwordHash'
+				name='password'
 				rules={{
 					required: 'Пароль обязателен',
 					minLength: {

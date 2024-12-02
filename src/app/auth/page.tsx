@@ -1,7 +1,5 @@
 "use client"
 
-
-
 import {Auth} from "@/app/auth/Auth";
 
 const Home= () => {

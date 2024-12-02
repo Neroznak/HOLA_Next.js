@@ -1,9 +1,8 @@
 import { IUser } from './user.interface'
 
 export interface IAuthForm {
-    username:string,
-    email: string
-    passwordHash: string
+    phoneNumber: string
+    password: string
 }
 
 export interface IAuthResponse {

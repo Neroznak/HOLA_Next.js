@@ -24,7 +24,7 @@ export const Chats = () => {
     const getChatName = (chat: IChat) => {
         return chat.isGroup
             ? chat.chatName
-            : chat.users.find(userChat => userChat.User.id !== user.id)?.User.displayName || 'Неизвестный пользователь';
+            : chat.users.find(userChat => userChat.User.id !== user.id)?.User.displayName || 'Избранное';
     };
 
     // Загружаем константу, которая будет инициализировать контекст

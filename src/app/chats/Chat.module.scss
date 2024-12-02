@@ -1,7 +1,8 @@
 .wrapper {
   @apply flex flex-col h-screen w-full;
-  background-image: url("../../../public/assets/images/back.png");
-  background-size: cover; /* изображение заполняет весь блок */
-  background-position: center; /* центрируем изображение */
-  background-repeat: no-repeat; /* не повторяем изображение */
+  //background-image: url("../../../public/assets/images/back.png");
+  //background-size: cover; /* изображение заполняет весь блок */
+  //background-position: center; /* центрируем изображение */
+  //background-repeat: no-repeat; /* не повторяем изображение */
+  background-color: #56c8c8;
 }
